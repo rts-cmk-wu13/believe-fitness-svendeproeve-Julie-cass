@@ -2,9 +2,10 @@
 
 /* imports */
 
-import "./loader.scss"
-import "./btnAnimation.scss"
+import "../components/loaderScss/btnAnimation.scss"
+import "../components/loaderScss/loader.scss"
 import Link from "next/link";
+
 import { useEffect, useState } from "react";
 
 /* images are made in scss file and put into an array */

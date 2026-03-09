@@ -8,8 +8,11 @@ Husk, at du ikke må arbejde på din opgave mellem kl. 16:00 og kl. 8:00.
 
 ## Dag 1
 
-Morgen - (tidspunkt)  
-Eftermiddag - (tidspunkt)
+Morgen - (10:38 - 12:08)  
+made the loader wirthout animation on button
+
+Eftermiddag - (12:12 - 13:41)
+made the animation for the button, commited then got an error bc of the background images, will be fixed in next commit.
 
 ## Dag 2
 
