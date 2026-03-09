@@ -11,4 +11,6 @@ body {
     background-color: var(--secondary-color);
     margin: 0 auto;
 max-width: 25rem;
+
+	position: relative;
 }

@@ -16,7 +16,6 @@
     height: 45.6rem;
 
 
-
     /* grid css */
     display: grid;
     grid-template-columns: repeat(3, minmax(3, 1fr));
@@ -27,40 +26,33 @@
 
 .loader-content-container {
     grid-area: 8/1/9/5;
-padding: 0 0 0 10%;
+    padding: 0 0 0 10%;
 
     h1 {
         color: var(--secondary-color);
         font-weight: bold;
-
         font-size: 3rem;
     }
 
     .titleSecondLine {
         display: block;
     }
-
     h2 {
         color: var(--primary-color);
-
     }
 }
 
 
 
-/* row start, colum start,row end, column end */
 
 .BtnToHomeFromLoader {
     grid-area: 10/2/10/3;
 
     max-height: 3rem;
-    padding: 0.6rem 0 0 0;
-    box-sizing: border-box;
     border-radius: 5rem;
-
 
     text-align: center;
     font-weight: 500;
-    color: var(--text-color);
-    background-color: var(--secondary-color);
+
+
 }
