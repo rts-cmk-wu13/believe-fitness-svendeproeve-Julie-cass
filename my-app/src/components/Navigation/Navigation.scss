@@ -1,0 +1,47 @@
+.overlay {
+  position: fixed;
+  height: 100%;
+  width: 0;
+  top: 0;
+  left: 0;
+
+
+
+  background-color: var(--primary-color);
+
+  overflow-x: hidden;
+  transition: 0.3s;
+
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  
+  &.open {
+    width: 25rem;
+  }
+
+
+.overlay-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.closeBtn {
+  position: absolute;
+  top: 1%;
+  right: 5%;
+  font-size: 3rem;
+  color: var(--text-color);
+  cursor: pointer;
+}
+
+.openBtn {
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: black;
+}
+
+}
