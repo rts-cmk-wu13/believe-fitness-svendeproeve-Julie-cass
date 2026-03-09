@@ -1,11 +1,16 @@
+import HomeHeader from "@/components/HomeHeader";
+import Navigation from "@/components/Navigation/Navigation";
 
 
 export default function home(){
 
     return(
         <>
+<main>
+    <Navigation />
+    <HomeHeader />
 
-        <h1>suck it loser</h1>
+</main>
         </>
     )
 }

@@ -14,6 +14,9 @@ made the loader wirthout animation on button
 Eftermiddag - (12:12 - 13:41)
 made the animation for the button, commited then got an error bc of the background images, will be fixed in next commit.
 
+(13:58 - 15:15)
+wrote in the documentation and fixed a little mistake with the background images on the loader.
+
 ## Dag 2
 
 Morgen - (tidspunkt)  

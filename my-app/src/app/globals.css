@@ -4,11 +4,13 @@
 --primary-color: #fff;
 --secondary-color: #F1C40E;
 --text-color : #000 ;
+
+background-color: var(--text-color);
 }
 
 
 body {
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
     margin: 0 auto;
 max-width: 25rem;
 
