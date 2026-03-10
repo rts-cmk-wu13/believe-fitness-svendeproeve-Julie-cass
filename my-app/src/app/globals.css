@@ -16,3 +16,11 @@ max-width: 25rem;
 
 	position: relative;
 }
+
+    .titleSecondLine {
+        display: block;
+    }
+.PageHeaderMenu{
+    display: flex;
+    justify-content: space-between;
+}

@@ -1,0 +1,108 @@
+.ProfilePageTitle {
+    padding: 1rem 0;
+    font-size: 2.2rem;
+    text-align: center;
+}
+
+.ProfileNameBox {
+    text-align: center;
+    background-color: #E9E9E9;
+    padding: 0.9rem 3rem;
+
+    color: #003147;
+}
+
+
+.ProfilePfp {
+    display: flex;
+    justify-content: center;
+
+    font-size: 5rem;
+}
+
+
+/* ------------------------card dashboard css */
+
+.CardDashBoardContainer {
+    max-width: 23rem;
+    margin: 0 auto;
+}
+
+
+.PfpActivityBox {
+    box-sizing: border-box;
+    padding: 1rem;
+    border-radius: 0.5rem;
+
+
+
+    background-color: #d2dce7;
+    color: #003147;
+}
+
+
+
+.PfpActivityTime {
+    padding: 0 0 0.5rem 0;
+}
+
+
+.PfpActivityLink {
+    box-sizing: border-box;
+    padding: 0.6rem 3rem;
+    border-radius: 0.5rem;
+
+    color: #d2dce7;
+    background-color: #003147;
+}
+
+
+
+.ProfileContainer h2 {
+    font-size: 2rem;
+    font-weight: 400;
+
+}
+
+.cardButtons {
+    display: flex;
+    margin-top: 0.5rem;
+    justify-content: space-between;
+}
+
+
+
+.editDelete {
+    display: flex;
+
+    gap:0.5rem;
+}
+
+.PfpLinkBtn {
+    background-color: #003147;
+    color: white;
+
+    box-sizing: border-box;
+    padding: 0.7rem;
+    border-radius: 0.5rem;
+
+    font-size: 1.3rem;
+}
+
+.TeamTitleBox{
+    display: flex;
+    justify-content: space-between;
+
+margin: 2rem 0 1rem 0;
+}
+
+.PlusBtnPfp {
+    color: #003147;
+    background-color: white;
+
+
+    box-sizing: border-box;
+    padding: 0.2rem 0.8rem;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+}

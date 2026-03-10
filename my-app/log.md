@@ -17,10 +17,27 @@ made the animation for the button, commited then got an error bc of the backgrou
 (13:58 - 15:15)
 wrote in the documentation and fixed a little mistake with the background images on the loader.
 
+(15:16 - 15:53)
+forgot to write here before commiting and pushing so it will be added tomorrow
+tried making the navigation but it really loves hugging the side.
+got the code from w3scools and moved  some things around.
+
 ## Dag 2
 
-Morgen - (tidspunkt)  
-Eftermiddag - (tidspunkt)
+Morgen - (8:12 - 8:48)  
+put in old code of a carousel using embla and a newsletter that i haven't tested the function of yet.
+
+(8:52 - 10:31)
+made the News part of home, edited some text in Newsletter, and styled on the home title part
+
+(10:34 - 10:42)
+added the contact form from another project, styled it
+
+Eftermiddag - (10:35 - 13:14)
+made the popular classes page, hated every minute of it but that's prob just bc i'm sick
+
+(13:20 - 15:28)
+made the single class page and styled on login
 
 ## Dag 3
 

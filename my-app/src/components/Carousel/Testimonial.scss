@@ -1,0 +1,80 @@
+.TestimonialSecContainer {
+    background-color: var(--primary-color);
+    background-color: rgba(0, 0, 0, 0.136);
+    background-blend-mode: lighten;
+ background-image: url("/images/welcome2.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    /* to make sure it doesn't flow over the app size and to make she it's the correct height */
+    overflow: hidden;
+    height: 22rem;
+}
+
+.TestimonialDivBox {
+    max-width: 20rem;
+    margin: 0 auto;
+
+padding: 7% 0 0 0 ;
+    color: var(--primary-color);;
+    text-align: center;
+}
+
+.testimonial_viewport {
+    overflow: hidden;
+}
+
+.testimonial_container {
+    display: flex;
+    touch-action: pan-y pinch-zoom;
+}
+
+.testimonial_slide {
+    flex: 0 0 100%;
+    min-width: 0;
+}
+
+/* buttons */
+.testimonialBtnBox {
+    max-width: 8rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.testimonial_next,
+.testimonial_prev {
+    border: 3px solid var(--primary-color);
+    border-radius: 5rem;
+
+    padding: 1rem;
+    font-weight: 900;
+}
+
+
+/* text styling */
+.testmonialTitle {
+    line-height: 2rem;
+    font-size: 1.8rem;
+    font-weight:700;
+
+    padding: 0 0 5% 0;
+}
+
+.testimonialContent {
+font-size: 1rem;
+}
+
+.testmonialName {
+    padding: 5% 0 8% 0;
+font-size: 1.3rem;
+font-weight: bold;
+
+}
+
+.testmonialOccupation {
+    font-weight: 100;
+    font-size: 0.8rem;
+}

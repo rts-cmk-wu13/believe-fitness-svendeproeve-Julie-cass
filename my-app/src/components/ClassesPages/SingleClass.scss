@@ -1,0 +1,68 @@
+@use 'MiniInfo';
+
+
+.SingleClassImageBox {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    height: 15rem;
+    margin-bottom: 2rem;
+
+    img {
+      grid-area: 1 / 1 / 6 / 6;
+      object-fit: cover;
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+}
+
+.SingleClassInfoBox {
+    max-width: 23rem;
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 4;
+
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+
+    span {
+        grid-area: 2 / 1 / 2 / 7; 
+        display: flex;
+        justify-content: space-between;
+    }
+
+    h1 {
+        grid-area: 5 / 1 / 5 / 5;
+        font-weight: bold;
+        font-size: 2rem;
+        padding-left: 1rem;
+    }
+
+    .ratingSingleClass {
+        grid-area: 6 / 1 / 6 / 7;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 1rem;
+       
+        button{
+            border: 1px solid var(--secondary-color);
+            padding: 0.5rem 2rem;
+            border-radius: 3rem;
+        }
+        .SingleClassInfoStars{
+            display: flex;
+        }
+
+    }
+
+    h1, p, .ratingSingleClass{
+         color: var(--secondary-color);
+    }
+}
