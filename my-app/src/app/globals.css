@@ -20,3 +20,7 @@ max-width: 25rem;
     .titleSecondLine {
         display: block;
     }
+.PageHeaderMenu{
+    display: flex;
+    justify-content: space-between;
+}

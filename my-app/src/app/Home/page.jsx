@@ -7,6 +7,7 @@ import { getTestimonials } from "@/lib/testimonial";
 import Newsletter from "@/components/newsletter";
 import HomeNewsComp from "@/components/HomeNews";
 import ContactForm from "@/components/contact";
+import NavigationServer from "@/components/Navigation/NavigatonServer";
 
 export default async function Home() {
     const testimonial = await getTestimonials()
@@ -15,10 +16,14 @@ export default async function Home() {
         <>
             <main>
                 <div className="BackgrounImageHeaderHome">
-                <Navigation />
-                <HomeHeader />
-</div>
-<HomeNewsComp />
+                    <div className="PageHeaderMenu">
+
+                        <NavigationServer />
+                        <HomeHeader />
+                    </div>
+                </div>
+
+                <HomeNewsComp />
                 <Newsletter />
 
                 <Testimonials testimonial={testimonial} />

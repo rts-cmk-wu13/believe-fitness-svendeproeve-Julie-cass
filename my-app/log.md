@@ -30,10 +30,11 @@ put in old code of a carousel using embla and a newsletter that i haven't tested
 (8:52 - 10:31)
 made the News part of home, edited some text in Newsletter, and styled on the home title part
 
-(10:34 - 9:42)
+(10:34 - 10:42)
 added the contact form from another project, styled it
 
-Eftermiddag - (tidspunkt)
+Eftermiddag - (10:35 - 13:14)
+made the popular classes page, hated every minute of it but that's prob just bc i'm sick
 
 ## Dag 3
 
