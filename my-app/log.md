@@ -26,6 +26,13 @@ got the code from w3scools and moved  some things around.
 
 Morgen - (8:12 - 8:48)  
 put in old code of a carousel using embla and a newsletter that i haven't tested the function of yet.
+
+(8:52 - 10:31)
+made the News part of home, edited some text in Newsletter, and styled on the home title part
+
+(10:34 - 9:42)
+added the contact form from another project, styled it
+
 Eftermiddag - (tidspunkt)
 
 ## Dag 3

@@ -6,6 +6,7 @@ import "./Home.scss"
 import { getTestimonials } from "@/lib/testimonial";
 import Newsletter from "@/components/newsletter";
 import HomeNewsComp from "@/components/HomeNews";
+import ContactForm from "@/components/contact";
 
 export default async function Home() {
     const testimonial = await getTestimonials()
@@ -21,6 +22,8 @@ export default async function Home() {
                 <Newsletter />
 
                 <Testimonials testimonial={testimonial} />
+
+                <ContactForm />
             </main>
             <footer>
                 <div>
