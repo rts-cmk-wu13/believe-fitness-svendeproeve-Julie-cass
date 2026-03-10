@@ -1,0 +1,40 @@
+.LoginPageSec {
+    max-width: 23rem;
+    height: 50rem;
+
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+.loginInput {
+    background-color: #E9E9E9;
+    width: 100%;
+    margin: 1rem 0 1rem 0;
+
+    padding: 0.5rem;
+
+    color: #999999;
+}
+
+.loginSubmitBtn {
+    width: 15rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+
+    background-color: #E9E9E9;
+    color: #003147;
+}
+
+
+
+/* text css */
+.loginTitle {
+    font-size: 2.25rem;
+    padding: 2rem 0 1rem 0;
+    text-align: start;
+}
+
+.LinkToMakeUser {
+    text-decoration: underline;
+}

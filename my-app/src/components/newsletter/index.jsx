@@ -9,9 +9,9 @@ export default function Newsletter() {
 
     return (
         <section className="newsletterSecContainer">
-            <h2 className="newsletterTitle">Nyhedsbrev</h2>
-            <p className="newsletterText">Få direkte besked når vi har sæsonstart
-                eller afholder arrangementer.</p>
+            <h2 className="newsletterTitle">Sign up for our newsletter</h2>
+            <p className="newsletterText">Sign up to receive the latest
+                 news and announcements from Believe Fitness</p>
 
           
                 <form className="newsletterForm" action={formAction}>

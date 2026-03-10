@@ -1,0 +1,39 @@
+.BackgrounImageHeaderHome {
+      background-color: #0000005a;
+    background-blend-mode: darken;
+    background-image: url("/images/welcome.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+
+    /* to make sure it doesn't flow over the app size and to make she it's the correct height */
+    overflow: hidden;
+    height: auto;
+    padding: 1.1rem;
+}
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 12% 0 8% 0;
+    line-height: 2.5rem;
+
+    h2 {
+        color: var(--secondary-color);
+        font-weight: bold;
+        font-size: 2rem;
+    }
+
+    h3 {
+        color: var(--text-color);
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+    p {
+        color: var(--text-color);
+        font-size: 1.2rem;
+    }
+}
