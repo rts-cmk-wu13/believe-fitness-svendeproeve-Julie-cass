@@ -1,3 +1,4 @@
+import Newsletter from "./newsletter";
 
 
 export default function HomeHeader(){
@@ -7,13 +8,15 @@ export default function HomeHeader(){
         <section>
             {/* put backgorun imageon section */}
             <div>
-                <h1>Welcome to<span>Belive Fitness</span></h1>
+                <h1>Welcome to<span className="titleSecondLine">Belive Fitness</span></h1>
 
                 <div>
                     <button>classes</button>
                     <button>Log in</button>
                 </div>
             </div>
+
+            <Newsletter />
         </section>
         </>
     )

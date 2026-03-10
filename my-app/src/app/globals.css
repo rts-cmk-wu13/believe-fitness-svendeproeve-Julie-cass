@@ -16,3 +16,7 @@ max-width: 25rem;
 
 	position: relative;
 }
+
+    .titleSecondLine {
+        display: block;
+    }

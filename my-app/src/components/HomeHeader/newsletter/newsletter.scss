@@ -1,0 +1,55 @@
+.newsletterSecContainer {
+    max-width: 23rem;
+    margin: 0 auto;
+
+    padding: 1rem 0 2rem 0;
+}
+
+
+.newsletterTitle {
+    font-size: 2.2rem;
+}
+
+
+.newsletterFormContainer {
+    font-size: 1.1rem;
+}
+
+
+.newsletterForm {
+    display: flex;
+    justify-content: space-between;
+
+    text-align: center;
+    padding: 1rem 0 0 0;
+
+    flex-wrap: wrap;
+}
+
+
+.newsletterInput {
+    max-width: 22rem;
+    border: 1px solid #999;
+    color: #999;
+
+    padding: 0 2rem;
+    width: 100%;
+    height: 2.5rem;
+
+    border-radius: 5rem;
+
+    box-sizing: border-box;
+}
+
+
+.newsletterSubminBtn {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+
+    font-weight: 500;
+    font-size: 0.8rem;
+
+    padding: 0.8rem 1.5rem;
+    border-radius: 5rem;
+
+}

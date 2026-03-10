@@ -17,9 +17,15 @@ made the animation for the button, commited then got an error bc of the backgrou
 (13:58 - 15:15)
 wrote in the documentation and fixed a little mistake with the background images on the loader.
 
+(15:16 - 15:53)
+forgot to write here before commiting and pushing so it will be added tomorrow
+tried making the navigation but it really loves hugging the side.
+got the code from w3scools and moved  some things around.
+
 ## Dag 2
 
-Morgen - (tidspunkt)  
+Morgen - (8:12 - 8:48)  
+put in old code of a carousel using embla and a newsletter that i haven't tested the function of yet.
 Eftermiddag - (tidspunkt)
 
 ## Dag 3
