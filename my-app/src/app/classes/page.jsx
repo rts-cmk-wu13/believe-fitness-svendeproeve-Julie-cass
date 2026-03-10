@@ -11,8 +11,8 @@ export default async function ClassesPage() {
     return (
         <>
             <div className="PageHeaderMenu">
-                <NavigationServer />
                 <h1 className="ClassesPageTitle">Popular classes</h1>
+                <NavigationServer />
             </div>
 
             <AllClasses Classes={Classes} />

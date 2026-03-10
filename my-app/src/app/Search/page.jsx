@@ -19,8 +19,8 @@ console.log(filteredActivities);
     return (
         <>
             <main>
-                <NavigationServer />
           <h1>bonk</h1>
+                <NavigationServer />
             </main>
         </>
     )

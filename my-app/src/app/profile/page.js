@@ -8,8 +8,8 @@ export default async function Profilepage() {
             <main>
                 <div className="PageHeaderMenu">
 
-                    <NavigationServer />
                     <h1>bonk</h1>
+                    <NavigationServer />
                 </div>
             </main>
         </>

@@ -1,13 +1,19 @@
-import NavigationServer from "@/components/Navigation/NavigatonServer";
 
-export default function SingleClassPage(){
 
-    return(
+import { getClassById } from "@/lib/classes";
+import SingleClassComp from "@/components/ClassesPages/SingleClass";
+
+export default async function SingleClassPage({ params }) {
+    const { id } = await params;
+    const Class = await getClassById(id);
+
+    return (
         <>
-         <div className="PageHeaderMenu">
-        <NavigationServer />
-        <h1>voisdnvspd</h1>
-        </div>
+            <main>
+              
+
+                <SingleClassComp Class={Class} />
+            </main>
         </>
     )
 }

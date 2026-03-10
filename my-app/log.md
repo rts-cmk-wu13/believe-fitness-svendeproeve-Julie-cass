@@ -36,6 +36,9 @@ added the contact form from another project, styled it
 Eftermiddag - (10:35 - 13:14)
 made the popular classes page, hated every minute of it but that's prob just bc i'm sick
 
+(13:20 - 15:28)
+made the single class page and styled on login
+
 ## Dag 3
 
 Morgen - (tidspunkt)  

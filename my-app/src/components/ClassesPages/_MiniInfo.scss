@@ -1,0 +1,46 @@
+.UnderSingleClassImage {
+    max-width: 23rem;
+    margin: 0 auto;
+
+    h3 {}
+
+    p {}
+
+    h2 {
+        font-weight: bold;
+        font-size: 1.5rem;
+        padding: 3rem 0 1rem 0;
+    }
+
+    .BtnSingleClassBox {
+        display: flex;
+        justify-content: center;
+
+        padding: 3rem 0 2rem 0;
+
+        button {
+            background-color: var(--secondary-color);
+            color: var(--text-color);
+
+            border-radius: 3rem;
+            padding: 0.6rem 8rem;
+        }
+    }
+
+    .SingleClassTrainerBox {
+        display: flex;
+text-align: center;
+        .SingleClassPfp {
+            background-color: var(--secondary-color);
+            padding: 1rem;
+            border-radius: 1rem;
+            margin: 0 1rem 0 0;
+        }
+
+        p {
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+    }
+
+}

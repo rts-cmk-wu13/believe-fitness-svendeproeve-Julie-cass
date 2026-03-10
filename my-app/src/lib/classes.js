@@ -9,7 +9,7 @@ export async function getAllClasses() {
 }
 
 
-export async function getClassesById(id) {
+export async function getClassById(id) {
   const response = await fetch(`http://localhost:4000/api/v1/classes/${id}`)
 
   if (!response.ok) {

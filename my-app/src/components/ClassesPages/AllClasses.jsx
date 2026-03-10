@@ -40,7 +40,7 @@ export default function AllClasses({ Classes }) {
         <>
             <section className="AllCLassesSection">
                 <div className="BigIMageContainer">
-                    <Link href="/Home">
+                    <Link href={`/classes/${randomClass.id}`}>
                         <img src={randomClass.asset.url} alt={randomClass.className} />
                         <div className="BigImageMiniInfoContainer">
                             <p>{randomClass.className}</p>
@@ -59,7 +59,7 @@ export default function AllClasses({ Classes }) {
                 <div className="ClassesScrollBox" ref={scrollRef} onWheel={handleWheel}>
                     {Classes.map((C) => (
                         <div className="ClassesDivBox" key={C.id}>
-                            <Link href="/Home">
+                            <Link href={`/classes/${C.id}`}>
                                 <img src={C.asset.url} alt="" />
 
 

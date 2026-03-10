@@ -18,8 +18,8 @@ export default async function Home() {
                 <div className="BackgrounImageHeaderHome">
                     <div className="PageHeaderMenu">
 
-                        <NavigationServer />
                         <HomeHeader />
+                        <NavigationServer />
                     </div>
                 </div>
 
