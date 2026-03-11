@@ -1,26 +1,28 @@
 @import "tailwindcss";
 
 :root {
---primary-color: #fff;
---secondary-color: #F1C40E;
---text-color : #000 ;
+    --primary-color: #fff;
+    --secondary-color: #F1C40E;
+    --text-color: #000;
 
-background-color: var(--text-color);
+    background-color: var(--text-color);
 }
 
 
 body {
     background-color: var(--primary-color);
+    min-height: 100vh;
     margin: 0 auto;
-max-width: 25rem;
+    max-width: 25rem;
 
-	position: relative;
+    position: relative;
 }
 
-    .titleSecondLine {
-        display: block;
-    }
-.PageHeaderMenu{
+.titleSecondLine {
+    display: block;
+}
+
+.PageHeaderMenu {
     display: flex;
     justify-content: space-between;
 }

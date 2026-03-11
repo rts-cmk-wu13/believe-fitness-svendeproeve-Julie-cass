@@ -1,27 +1,52 @@
 import NavigationServer from "@/components/Navigation/NavigatonServer";
 
-export default function Searchpage() {
-  
+import SearchBar from "@/components/Searchbar/SearchBar";
+import SearchContainer from "@/components/Searchbar/SearchContainer";
+import { getAllClasses } from "@/lib/classes";
 
-/*
- const { query } = await searchParams
-    console.log(query);
+import { FaArrowLeft } from "react-icons/fa";
+import Link from "next/link";
+export default async function Searchpage({ searchParams }) {
+  const { query } = await searchParams;
+  const Search = await getAllClasses();
 
-const filteredActivities = query
-  ? ACTIVITY.filter(activity =>
-      activity.name.toLowerCase().includes(query.toLowerCase()) ||
-      activity.weekday.toLowerCase().includes(query.toLowerCase())
+
+  const filteredClasses = query
+    ? Search.filter(item =>
+      (item.className).toLowerCase().includes(query.toLowerCase()) ||
+      (item.classDay).toLowerCase().includes(query.toLowerCase()) ||
+      (item.classDescription).toLowerCase().includes(query.toLowerCase()) ||
+      (item.trainer.trainerName).toLowerCase().includes(query.toLowerCase())
     )
-  : ACTIVITY; */
+    : Search;
+console.log("fileredclasses", filteredClasses);
 
-console.log(filteredActivities);
+ const flattenedClasses = filteredClasses.flat();
 
-    return (
-        <>
-            <main>
-          <h1>bonk</h1>
-                <NavigationServer />
-            </main>
-        </>
-    )
+ console.log("data is flattened", flattenedClasses);
+ 
+  return (
+    <>
+      <main>
+        <span>
+          <Link href="/classes"><FaArrowLeft size={30} color="#999" /> Search</Link>
+          <NavigationServer />
+        </span>
+
+        <SearchBar />
+        <h2>Popular classes</h2>
+
+        {filteredClasses.length === 0 ? (
+          <p>Your search did not give any results.
+            Try to search for something else.</p>
+        ) : (
+          filteredClasses.map((Classes) => (
+            <SearchContainer key={Classes.id} Classes={flattenedClasses} />
+          ))
+        )}
+
+        <h2>Popular Trainers</h2>
+      </main>
+    </>
+  );
 }
