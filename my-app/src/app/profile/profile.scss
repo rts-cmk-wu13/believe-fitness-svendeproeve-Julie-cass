@@ -1,0 +1,66 @@
+/* for the page.js */
+.ProfileContainer{
+   max-width: 23rem;
+   margin: 0 auto;
+}
+
+.ProfilePageTitle {
+    font-size: 2rem;
+}
+
+.ProfileNameBox {
+display: flex;
+text-align: start;
+
+margin: 2rem 0;
+    .ProfilePfp {
+        background-color: var(--secondary-color);
+        width: fit-content;
+        padding: 1rem;
+        border-radius: 3rem;
+    }
+
+    .ProfileUserInfoBox {
+padding: 0.5rem 0 0 0.5rem;
+
+        .ProfileName {
+            font-size:1.3rem ;
+        }
+
+    }
+}
+
+
+/* class components styling */
+
+.PfpClassContainer{
+border: 1px solid #9E9E9E;
+padding: 1rem;
+border-radius: 1rem;
+
+margin-bottom: 1rem;
+
+h3{
+    font-size: 2rem;
+    font-weight: bold;
+}
+p{
+font-size: 1.2rem;
+}
+}
+
+
+.PfpClassBtnContainer{
+display: flex;
+justify-content: space-between;
+}
+
+
+.PfpLinkToClass, .PfpLeaveClass {
+background-color: var(--secondary-color);
+padding: 1rem 1.5rem;
+border-radius: 3rem;
+
+font-weight: 500;
+
+}

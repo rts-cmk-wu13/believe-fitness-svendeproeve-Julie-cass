@@ -44,7 +44,9 @@ made the single class page and styled on login
 Morgen - (8:15 - 10:43)  
 i've been losing my marbles on the search page not bc it's hard but bc my code thinks "oh you want a section of scroll 4 times" when that's is being told NOWHERE.
 i will write about this master piece in my documention if i get it to work either way i'll write about tho if it doesn't work i won't be so nice to it.
-Eftermiddag - (tidspunkt)
+Eftermiddag - (10:50 - 13:56)
+oh my how time does fly, i really forgot to commit, but the profile was giving me a little headache not as much as the search but atleast profile works.
+i've also corrected some css in the globals so the background fills the whole viewpoint. i plan to use the rest of my time today writing documentaion bc i did not do that yesterday and there is a lot
 
 ## Dag 4
 

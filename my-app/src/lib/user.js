@@ -1,22 +1,12 @@
-export async function getAllTrainers() {
-  const response = await fetch(`http://localhost:4000/api/v1/trainers/`)
-
-  if (!response.ok) {
-    throw new Error("Something went wrong while fetching trainers.");
-  }
-  return await response.json()
-
-}
-
 import { cookies } from "next/headers"
 
 
-export async function getTrainersById(userId) {
+export async function getUsersById(userId) {
   const cookieStore = await cookies();
   const authToken = cookieStore.get("authToken");
 
   const response = await fetch(
-    `http://localhost:4000/api/v1/trainers/${userId}`,
+    `http://localhost:4000/api/v1/users/${userId}`,
     {
       method: "GET",
       headers: {
@@ -31,7 +21,7 @@ export async function getTrainersById(userId) {
   }
 
   const data = await response.json();
-  console.log("trainer", data);
+  console.log("user data", data);
   
   return data;
 }
