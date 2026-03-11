@@ -1,0 +1,83 @@
+/* .ClassesPageTitle {
+    font-size: 2rem;
+
+    margin: 1rem 0;
+
+}
+
+.AllCLassesSection {
+    padding: 2rem 0;
+    margin: 0 auto;
+} */
+
+/* scroll boxes scss */
+.SearchScrollBarTitle {
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+
+}
+
+.SearchClassesScrollBox {
+    display: flex;
+
+    overflow-y: hidden;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+
+
+    margin-bottom: 2rem;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    .SearchClassesDivBox {
+        position: relative;
+
+        margin-right: 1rem;
+
+     
+
+        img {
+            border-radius: 1rem;
+            width: 20vw; //viewport's width
+            max-width: 10rem;
+
+            height: 20vh; //viewport's height
+            max-height: 10rem;
+
+            object-fit: cover;
+              display: block;
+        }
+
+    }
+}
+/* 
+
+.SearchMiniInfoContainer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 4;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    box-sizing: border-box;
+    max-width: 15rem;
+    width: 100%;
+    height: 4rem;
+    padding: 0.3rem 0.5rem;
+
+    border-radius: 0 1rem 1rem 1rem;
+
+
+    background-color: var(--secondary-color);
+
+    .SearchMiniInfoStars {
+        display: flex;
+        gap: 0.2rem;
+    }
+} */

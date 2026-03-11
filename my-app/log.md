@@ -41,7 +41,9 @@ made the single class page and styled on login
 
 ## Dag 3
 
-Morgen - (tidspunkt)  
+Morgen - (8:15 - 10:43)  
+i've been losing my marbles on the search page not bc it's hard but bc my code thinks "oh you want a section of scroll 4 times" when that's is being told NOWHERE.
+i will write about this master piece in my documention if i get it to work either way i'll write about tho if it doesn't work i won't be so nice to it.
 Eftermiddag - (tidspunkt)
 
 ## Dag 4
