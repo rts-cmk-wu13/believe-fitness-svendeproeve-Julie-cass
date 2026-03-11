@@ -3,7 +3,7 @@
 
 #### den valgfrie opgave jeg har valgt, er opgave 
 
-
+### dag 1
 #### loader
 [Loader page link](./src/app/page.jsx)  
 
@@ -108,3 +108,75 @@ btnAnimation.scss snippet
 
     }
 ```
+
+### dag 2
+puttet en carouseljeg lavet i terminsprøven ind og rettet nogle ting til, mest med styling  
+
+(hvad er det?)  
+Denne kode er en React komponent til en testimonial carousel (slider).
+Den er lavet til Next.js client components og bruger biblioteket Embla Carousel.  
+(hvad er formålet?)  
+Formålet med komponenten er at præsentere kundeudtalelser på en overskuelig og interaktiv måde.  
+Hvis vi havdet gjort hvor de bare lå over hinanden ville det havdet været for uoverskuligt at kigge på for bruger.
+
+(hvordan sker det?)
+jeg brugte `npm install embla-carousel-react --save` i terminalen for at installere en aplication som gøre at lave carouseler/sliders simplere.  
+
+importer et array med testimonal's i hvis den ikke bliver sendt er der et tomt array.  
+- `emblaRef` er fungere ligesom useRef fra react den kommer bare fra embla hooket.
+- `emblaApi` er apiet givet af embla som gør at jeg kan styre carouselen.  
+
+- `loop:true` gør så carouselen aldrig stopper (for eksempel: 1, 2, 3, 4, 1, 2, 3, 4).  
+
+så lavet jeg to `const` en til at gå tilbage og en til at gå frem.  
+vi bruger `goToNext` for at uddybe.  
+```
+const goToNext = useCallback(() => {
+    if (emblaApi) emblaApi.scrollNext();
+  }, [emblaApi]);
+```
+`if (emblaApi) emblaApi.scrollNext()`  
+gør vi for at fortælle at api'et skal se om den kan gå videre, siden det et loop så kan den altid gå frem og tilbage.
+
+` }, [emblaApi]);`  
+fortæller `useCallback` at hvis der er en ænding i den skal den oprette functionen igen, hvis ikke skal functionen ikke kunne køre frem(det kan vi teste ud siden min er et `loop:true`).
+
+```
+import "./Testimonial.scss"
+import useEmblaCarousel from "embla-carousel-react";
+import { useCallback } from "react";
+
+import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
+ 
+export default function CarouselCards({ testimonial = [] }){
+  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true })
+
+  const goToPrev = useCallback(() => {
+    if (emblaApi) emblaApi.scrollPrev();
+  }, [emblaApi]);
+
+  const goToNext = useCallback(() => {
+    if (emblaApi) emblaApi.scrollNext();
+  }, [emblaApi]);
+  ```
+### dag 3
+
+(hvad er det?)  
+
+(hvad er formålet?)  
+
+(hvordan sker det?)
+### dag 4
+
+(hvad er det?)  
+
+(hvad er formålet?)  
+
+(hvordan sker det?)
+### dag 5  
+
+(hvad er det?)  
+
+(hvad er formålet?)  
+
+(hvordan sker det?)
