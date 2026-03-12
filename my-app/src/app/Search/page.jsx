@@ -21,9 +21,9 @@ export default async function Searchpage({ searchParams }) {
     : Search;
 console.log("fileredclasses", filteredClasses);
 
- const flattenedClasses = filteredClasses.flat();
 
- console.log("data is flattened", flattenedClasses);
+
+ 
  
   return (
     <>
@@ -35,15 +35,8 @@ console.log("fileredclasses", filteredClasses);
 
         <SearchBar />
         <h2>Popular classes</h2>
-
-        {filteredClasses.length === 0 ? (
-          <p>Your search did not give any results.
-            Try to search for something else.</p>
-        ) : (
-          filteredClasses.map((Classes) => (
-            <SearchContainer key={Classes.id} Classes={flattenedClasses} />
-          ))
-        )}
+      
+        <SearchContainer Classes={filteredClasses} />
 
         <h2>Popular Trainers</h2>
       </main>

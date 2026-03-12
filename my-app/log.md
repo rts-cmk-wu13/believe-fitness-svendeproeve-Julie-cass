@@ -56,7 +56,10 @@ wrote some of the documentation, started a lot later then last commit bc my cat 
 i wrote about the embla carousel in the documention, missing classes page, and all of today(day 3), i'll finished it tomorrow first thing.
 ## Dag 4
 
-Morgen - (tidspunkt)  
+Morgen - (8:20 - 10:46) 
+wrote in my documentation, i wrote it wrong so had to rewrite a lot. also fixed the problem with me search 
+( it was a very stupid mistake but it happens to the best of us, right?) 
+
 Eftermiddag - (tidspunkt)
 
 ## Dag 5

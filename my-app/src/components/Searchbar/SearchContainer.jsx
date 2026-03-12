@@ -25,10 +25,10 @@ export default function SearchContainer({ Classes }) {
            <section className="SearchAllCLassesSection">  {/* this section is on my pge four times when i only need one */}        
                 <div className="SearchClassesScrollBox" ref={scrollRef} onWheel={handleWheel}>
                     
-                    {Classes.map((C) => (
-                        <div className="SearchClassesDivBox" key={C.id}>
-                            <Link href={`/classes/${C.id}`}>
-                                <img src={C.asset.url} alt="" />
+                    {Classes.map((ClasSearch) => (
+                        <div className="SearchClassesDivBox" key={ClasSearch.id}>
+                            <Link href={`/classes/${ClasSearch.id}`}>
+                                <img src={ClasSearch.asset.url} alt="" />
                             </Link>
                         </div>
                     ))}

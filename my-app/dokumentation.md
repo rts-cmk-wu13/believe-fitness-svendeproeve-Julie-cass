@@ -1,12 +1,28 @@
 # Dokumentation
 ### Julie Cassandra Gerner Bissø wu13
 
-#### den valgfrie opgave jeg har valgt, er opgave 
+Formålet med dette projekt var at udvikle en webapplikation hvor brugere kan finde og tilmelde sig forskellige træningshold. Brugeren kan søge efter hold, se information om dem, og tilmelde sig via en profilside. Applikationen er bygget som en moderne webapplikation med fokus på komponentbaseret udvikling og dynamisk datahåndtering.
 
-### dag 1
+- Next.js: bliver brugt som framework til at opbygge applikationen. Next.js har functionen til at kunne lave server- og client-side rendering.  
+
+- React: bliver brugt til at lave komponenterne. Gør det mere overskuligt at lave projekter da du kan genbrug komponenter andre steder.  
+
+- SCSS: bliver brugt til styling. laver bedre strukture end normal css med nesting og med at kunne lave variabler.  
+
+- JavaScript: bliver brugt til fetching for api, og functionerne til nogle af siderne.  
+
+- Git / GitHub: bliver brugt til at logge versioner og gemme koden undervejs
+
+
+
+den valgfrie opgave jeg har valgt er opgave C, Opret, rediger og slet en "class"  
+
+
 #### loader
 [Loader page link](./src/app/page.jsx)  
 
+
+[Link to helping links](https://dev.to/juniordevforlife/adventures-with-javascript-arrays-random-numbers-array-4io1)
 ```
 const backgrounds = ["bg1", "bg2"];
 
@@ -49,10 +65,14 @@ vores `count` er 0 og for at ændre den bruger vi `setCount`
    
 
 - `useEffect`  
-Når en funktion returneres i useEffect, kører den oprydningsfunktion, før effekten køres igen.
+bruges til at køre kode når komponenten bliver indlæst.  
+I dette tilfælde bruges den til at vælge et tilfældigt baggrundsbillede når loaderen starter.
 
 - `Math`  
-beregne, visualisere eller vise komplekse matematiske formler, grafer og ligninger i en webapplikation
+`Math.floor()` og `Math.random()` bruges til at vælge et tilfældigt element fra et array.  
+`Math.random()` genererer et tal mellem 0 og 1, som derefter ganges med arrayets længde. 
+
+ `Math.floor()` runder tallet ned til et helt tal, så det kan bruges som index i arrayet.
 
 
 #### Button animation  
@@ -109,74 +129,7 @@ btnAnimation.scss snippet
     }
 ```
 
-### dag 2
-puttet en carouseljeg lavet i terminsprøven ind og rettet nogle ting til, mest med styling  
+under kodeningen af projektet kom jeg forbi nogle forhændringer, især med min søgefunction.  
+fandt hårdt ud af at hvordan du render dine komponenter i page.jsx betyder meget.  
+jeg havdet puttet søge komponentet i en `.map()` som gjor den renderet de komponent gange antallet af id'er i api arrayet.  
 
-(hvad er det?)  
-Denne kode er en React komponent til en testimonial carousel (slider).
-Den er lavet til Next.js client components og bruger biblioteket Embla Carousel.  
-(hvad er formålet?)  
-Formålet med komponenten er at præsentere kundeudtalelser på en overskuelig og interaktiv måde.  
-Hvis vi havdet gjort hvor de bare lå over hinanden ville det havdet været for uoverskuligt at kigge på for bruger.
-
-(hvordan sker det?)
-jeg brugte `npm install embla-carousel-react --save` i terminalen for at installere en aplication som gøre at lave carouseler/sliders simplere.  
-
-importer et array med testimonal's i hvis den ikke bliver sendt er der et tomt array.  
-- `emblaRef` er fungere ligesom useRef fra react den kommer bare fra embla hooket.
-- `emblaApi` er apiet givet af embla som gør at jeg kan styre carouselen.  
-
-- `loop:true` gør så carouselen aldrig stopper (for eksempel: 1, 2, 3, 4, 1, 2, 3, 4).  
-
-så lavet jeg to `const` en til at gå tilbage og en til at gå frem.  
-vi bruger `goToNext` for at uddybe.  
-```
-const goToNext = useCallback(() => {
-    if (emblaApi) emblaApi.scrollNext();
-  }, [emblaApi]);
-```
-`if (emblaApi) emblaApi.scrollNext()`  
-gør vi for at fortælle at api'et skal se om den kan gå videre, siden det et loop så kan den altid gå frem og tilbage.
-
-` }, [emblaApi]);`  
-fortæller `useCallback` at hvis der er en ænding i den skal den oprette functionen igen, hvis ikke skal functionen ikke kunne køre frem(det kan vi teste ud siden min er et `loop:true`).
-
-```
-import "./Testimonial.scss"
-import useEmblaCarousel from "embla-carousel-react";
-import { useCallback } from "react";
-
-import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
- 
-export default function CarouselCards({ testimonial = [] }){
-  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true })
-
-  const goToPrev = useCallback(() => {
-    if (emblaApi) emblaApi.scrollPrev();
-  }, [emblaApi]);
-
-  const goToNext = useCallback(() => {
-    if (emblaApi) emblaApi.scrollNext();
-  }, [emblaApi]);
-  ```
-### dag 3
-
-(hvad er det?)  
-
-(hvad er formålet?)  
-
-(hvordan sker det?)
-### dag 4
-
-(hvad er det?)  
-
-(hvad er formålet?)  
-
-(hvordan sker det?)
-### dag 5  
-
-(hvad er det?)  
-
-(hvad er formålet?)  
-
-(hvordan sker det?)
