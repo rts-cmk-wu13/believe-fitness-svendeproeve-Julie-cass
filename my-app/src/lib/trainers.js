@@ -7,7 +7,7 @@ export async function getAllTrainers() {
   return await response.json()
 
 }
-
+/* 
 import { cookies } from "next/headers"
 
 
@@ -35,3 +35,4 @@ export async function getTrainersById(userId) {
   
   return data;
 }
+ */

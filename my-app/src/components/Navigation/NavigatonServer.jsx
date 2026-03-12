@@ -10,6 +10,7 @@ export default async function NavigationServer() {
     <>
 
     <Navigation  loggedIn={loggedIn} />
+    
     </>
 );
 }

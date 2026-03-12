@@ -49,9 +49,9 @@ export default function SingleClassComp({ Class }) {
                             <p className="SingleClassPfp"><IoMdPerson size={30} /></p>
                             <p>{Class.trainer.trainerName}</p>
                         </div>
-                        <div className="BtnSingleClassBox">
-                    <button>SIGN UP</button>
-                    </div>
+                        <div className="SignUpBtn">
+                            <button>SIGN UP</button>
+                        </div>
                     </div>
                 </div>
             </section>

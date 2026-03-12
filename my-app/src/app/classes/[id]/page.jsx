@@ -10,8 +10,6 @@ export default async function SingleClassPage({ params }) {
     return (
         <>
             <main>
-              
-
                 <SingleClassComp Class={Class} />
             </main>
         </>

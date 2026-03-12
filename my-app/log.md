@@ -60,6 +60,9 @@ Morgen - (8:20 - 10:46)
 wrote in my documentation, i wrote it wrong so had to rewrite a lot. also fixed the problem with me search 
 ( it was a very stupid mistake but it happens to the best of us, right?) 
 
+(10:50 - 12:56)
+made the search page fully with a working search also changed some styling on the navigation bar and accidently ruined the singleclass but i fixed it.
+
 Eftermiddag - (tidspunkt)
 
 ## Dag 5
