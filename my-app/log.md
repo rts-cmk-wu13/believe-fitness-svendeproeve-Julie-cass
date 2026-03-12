@@ -63,8 +63,9 @@ wrote in my documentation, i wrote it wrong so had to rewrite a lot. also fixed 
 (10:50 - 12:56)
 made the search page fully with a working search also changed some styling on the navigation bar and accidently ruined the singleclass but i fixed it.
 
-Eftermiddag - (tidspunkt)
-
+Eftermiddag - (13:00 - 15:36)
+stopping a little early today bc my brain really can't think, i am tho kinda proud that i made the search today.
+i started on the make new class.
 ## Dag 5
 
 Morgen - (tidspunkt)  

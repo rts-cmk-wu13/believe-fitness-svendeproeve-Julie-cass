@@ -13,6 +13,7 @@ export default async function MemberCard() {
         <>
             <section>
                 <h2>Tilmeldte hold</h2>
+                <Link href={"/NewClass"}>bonk</Link>
                 {user.classes.map(C => (
                     <div key={C.id}>
                         <h3>{C.className}</h3>

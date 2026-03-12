@@ -4,6 +4,7 @@ import { cookies } from "next/headers"
 export async function getUsersById(userId) {
   const cookieStore = await cookies();
   const authToken = cookieStore.get("authToken");
+  
 
   const response = await fetch(
     `http://localhost:4000/api/v1/users/${userId}`,
