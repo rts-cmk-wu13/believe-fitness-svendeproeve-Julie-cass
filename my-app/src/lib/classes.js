@@ -19,3 +19,8 @@ export async function getClassById(id) {
 
 }
 
+
+export async function CreateClass(prevState, formData) {
+  console.log(formData);
+  
+}

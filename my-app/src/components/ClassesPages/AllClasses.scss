@@ -1,3 +1,5 @@
+@use "../Searchbar/Scroll";
+
 .ClassesPageTitle {
     font-size: 2rem;
 
@@ -55,84 +57,3 @@
     }
 }
 
-
-/* scroll boxes scss */
-.ScrollBarTitle {
-    font-weight: bold;
-    font-size: 1.5rem;
-    margin-bottom: 2rem;
-
-}
-
-.ClassesScrollBox {
-    display: flex;
-    justify-content: space-around;
-
-    overflow-y: hidden;
-    overflow-x: auto;
-    scroll-behavior: smooth;
-
-
-    margin-bottom: 2rem;
-
-    &::-webkit-scrollbar {
-        display: none;
-    }
-
-    .ClassesDivBox {
-        position: relative;
-
-        margin-right: 1rem;
-
-        display: flex;
-        flex-direction: column;
-
-        img {
-            border-radius: 1rem;
-            width: 20vw; //viewport's width
-            max-width: 10rem;
-
-            height: 20vh; //viewport's height
-            max-height: 10rem;
-
-            object-fit: cover;
-        }
-
-    }
-
-    .ClassesDivBox img {
-        width: 10rem;
-        height: 10rem;
-        border-radius: 1rem;
-        object-fit: cover;
-        display: block;
-    }
-}
-
-
-.MiniInfoContainer {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    z-index: 4;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-    box-sizing: border-box;
-    max-width: 15rem;
-    width: 100%;
-    height: 4rem;
-    padding: 0.3rem 0.5rem;
-
-    border-radius: 0 1rem 1rem 1rem;
-
-
-    background-color: var(--secondary-color);
-
-    .MiniInfoStars {
-        display: flex;
-        gap: 0.2rem;
-    }
-}

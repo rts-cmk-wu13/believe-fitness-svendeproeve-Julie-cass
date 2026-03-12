@@ -1,8 +1,8 @@
 "use client";
 import { useSearchParams, useRouter, usePathname } from "next/navigation";
+import { FaSearch } from "react-icons/fa";
 
-//navn
-//dag
+
 export default function SearchBar() {
     const searchParams = useSearchParams()
     const pathName = usePathname()
@@ -19,8 +19,13 @@ export default function SearchBar() {
 
     return (
         <form className="SearchForm">
-            <input onChange={handleChange} type="search" name="query" />
-            <button type="submit">search</button>
+            <div className="SearchInputWrapper">
+                 <FaSearch
+          style={{ position: "absolute", left: "0.75rem", top: "50%", transform: "translateY(-50%)", color: "#9E9E9E",  pointerEvents: "none", fontSize: "1rem",
+          }}
+        />
+            <input onChange={handleChange} type="search" name="query" placeholder="Search classes"/>
+          </div>
         </form>
     )
 }

@@ -56,9 +56,16 @@ wrote some of the documentation, started a lot later then last commit bc my cat 
 i wrote about the embla carousel in the documention, missing classes page, and all of today(day 3), i'll finished it tomorrow first thing.
 ## Dag 4
 
-Morgen - (tidspunkt)  
-Eftermiddag - (tidspunkt)
+Morgen - (8:20 - 10:46) 
+wrote in my documentation, i wrote it wrong so had to rewrite a lot. also fixed the problem with me search 
+( it was a very stupid mistake but it happens to the best of us, right?) 
 
+(10:50 - 12:56)
+made the search page fully with a working search also changed some styling on the navigation bar and accidently ruined the singleclass but i fixed it.
+
+Eftermiddag - (13:00 - 15:36)
+stopping a little early today bc my brain really can't think, i am tho kinda proud that i made the search today.
+i started on the make new class.
 ## Dag 5
 
 Morgen - (tidspunkt)  

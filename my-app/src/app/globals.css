@@ -4,6 +4,7 @@
     --primary-color: #fff;
     --secondary-color: #F1C40E;
     --text-color: #000;
+    --grey-color: #9E9E9E;
 
     background-color: var(--text-color);
 }

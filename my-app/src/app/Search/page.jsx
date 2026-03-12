@@ -2,13 +2,17 @@ import NavigationServer from "@/components/Navigation/NavigatonServer";
 
 import SearchBar from "@/components/Searchbar/SearchBar";
 import SearchContainer from "@/components/Searchbar/SearchContainer";
+
 import { getAllClasses } from "@/lib/classes";
+import { getAllTrainers } from "@/lib/trainers";
 
 import { FaArrowLeft } from "react-icons/fa";
 import Link from "next/link";
+
 export default async function Searchpage({ searchParams }) {
   const { query } = await searchParams;
   const Search = await getAllClasses();
+  const Trainer = await getAllTrainers();
 
 
   const filteredClasses = query
@@ -21,31 +25,27 @@ export default async function Searchpage({ searchParams }) {
     : Search;
 console.log("fileredclasses", filteredClasses);
 
- const flattenedClasses = filteredClasses.flat();
 
- console.log("data is flattened", flattenedClasses);
+
+ 
  
   return (
     <>
       <main>
-        <span>
-          <Link href="/classes"><FaArrowLeft size={30} color="#999" /> Search</Link>
-          <NavigationServer />
-        </span>
+        <span id="Search" className="PageHeaderMenu">
+
+        <Link href="/classes" className="back-link">
+          <FaArrowLeft size={30} color="#999" />
+          <h1>Search</h1>
+        </Link>
+        
+        <NavigationServer />
+      </span>
+
 
         <SearchBar />
-        <h2>Popular classes</h2>
-
-        {filteredClasses.length === 0 ? (
-          <p>Your search did not give any results.
-            Try to search for something else.</p>
-        ) : (
-          filteredClasses.map((Classes) => (
-            <SearchContainer key={Classes.id} Classes={flattenedClasses} />
-          ))
-        )}
-
-        <h2>Popular Trainers</h2>
+      
+        <SearchContainer Trainer={Trainer} Classes={filteredClasses} />
       </main>
     </>
   );

@@ -13,7 +13,7 @@
 
     /* to make sure it doesn't flow over the app size and to make she it's the correct height */
     overflow: hidden;
-    height: 45.6rem;
+    height: 100vh;
 
 
     /* grid css */
@@ -25,17 +25,19 @@
 
 
 .loader-content-container {
-    grid-area: 8/1/9/5;
+    grid-area: 7/1/8/5;
     padding: 0 0 0 10%;
 
     h1 {
         color: var(--secondary-color);
         font-weight: bold;
-        font-size: 3rem;
+        font-size: 4rem;
     }
 
     h2 {
         color: var(--primary-color);
+        font-size: 1.2rem;
+        font-weight: 500;
     }
 }
 
@@ -43,7 +45,7 @@
 
 
 .BtnToHomeFromLoader {
-    grid-area: 10/2/10/3;
+    grid-area: 9/2/9/3;
 
     max-height: 3rem;
     border-radius: 5rem;
@@ -51,5 +53,6 @@
     text-align: center;
     font-weight: 500;
 
+    width: 100%;
 
 }
