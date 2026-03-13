@@ -20,6 +20,7 @@ export default async function MakeNewClassPage() {
         </>
     ) : (
         <>
+        <main className="MakeNewClassContainer">
             <span id="Search" className="PageHeaderMenu">
 
                 <Link href="/profile" className="back-link">
@@ -30,6 +31,7 @@ export default async function MakeNewClassPage() {
             </span>
 
             <CreateClassForm trainers={trainers} />
+            </main>
         </>
     )
 

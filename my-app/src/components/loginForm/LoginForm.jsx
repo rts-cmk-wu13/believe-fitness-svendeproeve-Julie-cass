@@ -2,7 +2,7 @@
 import { useActionState } from "react"
 import { loginUser } from "./action"
 
-import "./loginForm.css"
+import "./loginForm.scss"
 
 const initialState = {
     values: {

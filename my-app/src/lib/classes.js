@@ -1,4 +1,5 @@
 "use server";
+import { redirect } from "next/dist/server/api-utils";
 import { cookies } from "next/headers";
 
 
@@ -25,36 +26,26 @@ export async function getClassById(id) {
 
 
 export async function CreateClass(prevState, formData) {
-  
-  const cookieStore = await cookies()
-  const authToken = cookieStore.get("authToken").value
+  const cookieStore = await cookies();
+  const authToken = cookieStore.get("authToken")?.value;
 
-  console.log("TOKEN:", authToken);
-  console.log(Object.fromEntries(formData));
+  if (!authToken) throw new Error("No auth token found");
 
-    const assetResponse = await fetch(`http://localhost:4000/api/v1/assets/`, {
-    method: "POST",
-    headers: {
-      Authorization: `Bearer ${authToken}`,
-    },
-    body: formData
-  })
-/* 
-  const assetData = await assetResponse.json()
-
-  formData.append("assetId", assetData.id) */
+  formData.append("assetId", "2");
 
   const res = await fetch(`http://localhost:4000/api/v1/classes/`, {
     method: "POST",
     headers: {
       Authorization: `Bearer ${authToken}`,
     },
-    body: formData
-  })
+    body: formData,
+  });
 
   if (!res.ok) {
-    console.error("Upload failed", await res.text())
+    const errorData = await res.json();
+    throw new Error(`Failed to create class: ${errorData.message}`);
   }
 
-  return res.json()
+  console.log("Class created successfully");
+
 }

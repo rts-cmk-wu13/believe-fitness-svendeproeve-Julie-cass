@@ -3,6 +3,7 @@
 import { useActionState } from "react";
 
 import { CreateClass } from "@/lib/classes";
+import "./NewClass.scss";
 
 const initialState = {
     className: null,
@@ -22,23 +23,21 @@ export default function CreateClassForm({ userId, trainers }) {
 
 
     return (
-        <div className="p-5">
-            <h1 className="text-3xl text-bold mb-4">Create new Class</h1>
-            <form action={formAction}>
+        <div className="NewClassFormContainer">
+            <h1 className="NewClassTitle">Create a new Class</h1>
+            <form className="NewClassForm" action={formAction}>
 
-                <div>
-                    <label htmlFor="className">className</label>
-                    <input type="text" name="className" id="className" placeholder="Class name..." />
+                <div className="NewClassInputBox">
+                    <input className="NewClassInput" type="text" name="className" id="className" placeholder="Class name..." />
                 </div>
 
-                <div>
-                    <label htmlFor="classDescription">classDescription</label>
-                    <textarea name="classDescription" id="classDescription" placeholder="Class description..."></textarea>
+                <div className="NewClassInputBox">
+                    <textarea className="NewClassInput" name="classDescription" id="classDescription" placeholder="Class description..."></textarea>
                 </div>
 
-                <div>
-                    <label htmlFor="classDay">Weekday</label>
-                    <select name="classDay" id="classDay">
+<div className="WeekDay-Time_container">
+                <div className="NewClassInputBox">
+                    <select className="NewClassInput" name="classDay" id="classDay">
                         <option value="">Weekday</option>
                         <option value="Monday">Monday</option>
                         <option value="Tuesday">Tuesday</option>
@@ -51,14 +50,12 @@ export default function CreateClassForm({ userId, trainers }) {
 
                 </div>
 
-                <div>
-                    <label htmlFor="classTime">time</label>
-                    <input type="text" name="classTime" id="classTime" placeholder="Class time..." />
+                <div className="NewClassInputBox">
+                    <input className="NewClassInput" type="text" name="classTime" id="classTime" placeholder="Class time..." />
                 </div>
-
-                <div>
-                    <label htmlFor="trainer">Trainer</label>
-                    <select name="trainerId" id="trainer">
+</div>
+                <div className="NewClassInputBox">
+                    <select className="NewClassInput" name="trainerId" id="trainer">
                         <option value="">Select trainer</option>
                         {trainers.map((trainer) => (
                             <option key={trainer.id} value={trainer.id}>
@@ -68,15 +65,14 @@ export default function CreateClassForm({ userId, trainers }) {
                     </select>
                 </div>
 
-                <div>
-                    <label htmlFor="MaxParicipants">Max Paricipants</label>
-                    <input type="number" name="maxParticipants" id="maxParticipants" placeholder="Max participants..." />
+                <div className="NewClassInputBox">
+                    <input className="NewClassInput" type="number" name="maxParticipants" id="maxParticipants" placeholder="Max participants..." />
                 </div>
-                <div>
-                    <label htmlFor="asset">Class Image</label>
-                    <input type="file" name="asset" id="asset" />
+                <div className="NewClassInputBox">
+                    <label htmlFor="asset">Choose an image:</label>
+                    <input className="NewClassInput" type="file" name="asset" id="asset" />
                 </div>
-                <button type="submit"> Create</button>
+                <button className="NewClassSubmitBtn" type="submit">CREATE CLASS</button>
             </form>
         </div>
     )

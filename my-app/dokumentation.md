@@ -15,7 +15,7 @@ Formålet med dette projekt var at udvikle en webapplikation hvor brugere kan fi
 
 
 
-den valgfrie opgave jeg har valgt er opgave C, Opret, rediger og slet en "class"  
+de valgfrie opgaver jeg har prøvet valgt er opgave C, Opret, rediger og slet en "class" og opgave B - Opret bruger. begge virker til en vis grad.  
 
 
 #### loader
@@ -132,4 +132,40 @@ btnAnimation.scss snippet
 under kodeningen af projektet kom jeg forbi nogle forhændringer, især med min søgefunction.  
 fandt hårdt ud af at hvordan du render dine komponenter i page.jsx betyder meget.  
 jeg havdet puttet søge komponentet i en `.map()` som gjor den renderet de komponent gange antallet af id'er i api arrayet.  
+
+
+
+#### Opret ny class  
+denne function gør så en bruger med admin role kan oprette nye træningshold.  
+Når formularen bliver udfyldt og sendt, bliver dataen sendt til API'et, som opretter en ny class i systemet.  
+
+Server functionen `CreateClass` for dataet fra fomularen vi som admin fylder ud og for det sendt videre til api'et med en `POST` request.  
+Før requesten sendes, hentes brugerens authentication token fra cookies. Tokenet bruges til at sikre at kun admin kan oprette nye classes.
+
+```
+export async function CreateClass(prevState, formData) {
+  const cookieStore = await cookies();
+  const authToken = cookieStore.get("authToken")?.value;
+
+  if (!authToken) throw new Error("No auth token found");
+
+  const res = await fetch(`http://localhost:4000/api/v1/classes/`, {
+    method: "POST",
+    headers: {
+      Authorization: `Bearer ${authToken}`,
+    },
+    body: formData,
+  });
+}
+```  
+
+Formularen vises i en client komponent, hvor brugeren kan indtaste information om holdet såsom navn, beskrivelse, dag, tidspunkt, træner og maksimum antal deltagere.
+
+Formularen bruger `useActionState` til at forbinde formularen med server funktionen. 
+ Når formularen bliver sendt, bliver `CreateClass` automatisk kaldt og dataen sendt til API'et.
+
+Trænere bliver vist i en dropdown menu, hvor `.map()` bruges til at gennemgå listen af trænere og vise dem som valgmuligheder.  
+
+functionen virker nok til at kunne poste dem og få dem op MEN assets virker ikke så jeg har putter placeholder på all img tags som bruger classes data.
+
 

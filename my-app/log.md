@@ -71,4 +71,5 @@ i started on the make new class.
 Morgen - (8:15 - 11:51)  
 tried making the make new class but it won't take in my file no matter what everything else it'll take
 
-Eftermiddag - (tidspunkt)
+Eftermiddag - (11:55 - 15:00)
+added in make user and styled on the create new class and make user.

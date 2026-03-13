@@ -1,7 +1,8 @@
+import LogoutButton from "../logout-button";
 import "./HomeHeader.scss"
 import Link from "next/link";
 
-export default function HomeHeader(){
+export default function HomeHeader({ loggedIn }){
 
     return(
         <>
@@ -13,7 +14,7 @@ export default function HomeHeader(){
 </span>
                 <div className="HomeHeaderBtnContainer">
                     <button><Link href="/classes">Classes</Link></button>
-                    <button><Link href="/login">Log in</Link></button>
+                   <LogoutButton  loggedIn={loggedIn} />
                 </div>
             </div>
 

@@ -1,14 +1,16 @@
 import LoginForm from "@/components/loginForm/LoginForm";
-
+import Link from "next/link";
 export default function LoginPage() {
     return (
         <>
             <main>
                 <div className="LoginTitleContainer">
-                    <h1>Believe <span className="titleSecondLine"> Fitness</span></h1>
+                  <h1>Believe <span className="titleSecondLine"> Fitness</span></h1>
                     <div>
-                        <span></span>
-                        <h2>Train like a pro</h2>
+                        
+                        <div className="secondLogoTitle">
+                      <div className="Line"></div>  <h2>Train like a pro</h2>
+                      </div>
                     </div>
 
                 </div>
@@ -17,6 +19,10 @@ export default function LoginPage() {
 
                     <LoginForm />
 
+                    <div>
+                        <p>Are You not yet a Believer? <span className="titleSecondLine">
+                            <Link href="/MakeUser">Sign up here</Link> to start training like a pro.</span> </p>
+                    </div>
                 </section>
             </main>
         </>
