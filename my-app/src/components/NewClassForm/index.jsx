@@ -17,7 +17,7 @@ const initialState = {
     asset: null
 }
 
-export default function CreateClassForm({userId}) {
+export default function CreateClassForm({ userId, trainers }) {
     const [state, formAction, isPending] = useActionState(CreateClass, initialState)
 
 
@@ -49,7 +49,6 @@ export default function CreateClassForm({userId}) {
                         <option value="Sunday">Sunday</option>
                     </select>
 
-                    <input name="classDay" id="classDay" placeholder="Class day..." />
                 </div>
 
                 <div>
@@ -58,19 +57,24 @@ export default function CreateClassForm({userId}) {
                 </div>
 
                 <div>
-                    <label htmlFor="trainer">trainer</label>
-                    <input type="text" id="trainer" value="" placeholder="Class trainer..." />
+                    <label htmlFor="trainer">Trainer</label>
+                    <select name="trainerId" id="trainer">
+                        <option value="">Select trainer</option>
+                        {trainers.map((trainer) => (
+                            <option key={trainer.id} value={trainer.id}>
+                                {trainer.trainerName}
+                            </option>
+                        ))}
+                    </select>
                 </div>
 
                 <div>
                     <label htmlFor="MaxParicipants">Max Paricipants</label>
-                    <input type="text" name="MaxParicipants" id="MaxParicipants" placeholder="Max participants in class..." />
-
+                    <input type="number" name="maxParticipants" id="maxParticipants" placeholder="Max participants..." />
                 </div>
                 <div>
-                    <label htmlFor="asset">chose picture</label>
-                    <input type="file" name="asset" id="Image" placeholder="Max participants in class..." />
-
+                    <label htmlFor="asset">Class Image</label>
+                    <input type="file" name="asset" id="asset" />
                 </div>
                 <button type="submit"> Create</button>
             </form>

@@ -28,12 +28,14 @@ export default function AllClasses({ Classes }) {
 
 
     /* for scroll */
-    const handleWheel = (e) => {
-        if (scrollRef.current) {
-            e.preventDefault();
-            scrollRef.current.scrollLeft += e.deltaY;
-        }
-    };
+const handleWheel = (e) => {
+    if (!scrollRef.current) return;
+
+    if (e.deltaY !== 0) {
+        e.preventDefault();
+        scrollRef.current.scrollLeft += e.deltaY;
+    }
+};
 
 
     return (
@@ -41,7 +43,7 @@ export default function AllClasses({ Classes }) {
             <section className="AllCLassesSection">
                 <div className="BigIMageContainer">
                     <Link href={`/classes/${randomClass.id}`}>
-                        <img src={randomClass.asset.url} alt={randomClass.className} />
+                    <img src={randomClass.asset?.url ||  '/images/placeholder.jpg'} alt={randomClass.className}  />
                         <div className="BigImageMiniInfoContainer">
                             <p>{randomClass.className}</p>
                             <div className="BigImageMiniInfoStars">
@@ -60,8 +62,7 @@ export default function AllClasses({ Classes }) {
                     {Classes.map((C) => (
                         <div className="ClassesDivBox" key={C.id}>
                             <Link href={`/classes/${C.id}`}>
-                                <img src={C.asset.url} alt="" />
-
+<img src={C.asset?.url ||  '/images/placeholder.jpg'} alt={C.className} />
 
                                 <div className="MiniInfoContainer">
                                     <p>{C.className}</p>

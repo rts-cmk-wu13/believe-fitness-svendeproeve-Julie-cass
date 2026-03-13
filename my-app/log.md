@@ -68,5 +68,7 @@ stopping a little early today bc my brain really can't think, i am tho kinda pro
 i started on the make new class.
 ## Dag 5
 
-Morgen - (tidspunkt)  
+Morgen - (8:15 - 11:51)  
+tried making the make new class but it won't take in my file no matter what everything else it'll take
+
 Eftermiddag - (tidspunkt)

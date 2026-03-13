@@ -17,7 +17,7 @@ export default function SingleClassComp({ Class }) {
 
                     {/* image */}
                     <div className="SingleClassImageBox">
-                        <img src={Class.asset.url} alt="" />
+                        <img src={Class.asset?.url || '/images/placeholder.jpg'} alt={Class.className} />
 
                         {/* infomation over image */}
                         <div className="SingleClassInfoBox">
