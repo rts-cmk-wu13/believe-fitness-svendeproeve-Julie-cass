@@ -1,6 +1,4 @@
 import Testimonials from "@/components/Carousel/Testimonial";
-import HomeHeader from "@/components/HomeHeader";
-import Navigation from "@/components/Navigation/Navigation";
 
 import "./Home.scss"
 import { getTestimonials } from "@/lib/testimonial";
@@ -8,6 +6,7 @@ import Newsletter from "@/components/newsletter";
 import HomeNewsComp from "@/components/HomeNews";
 import ContactForm from "@/components/contact";
 import NavigationServer from "@/components/Navigation/NavigatonServer";
+import HomeHeaderServer from "@/components/HomeHeader/HomeHeaderServer";
 
 export default async function Home() {
     const testimonial = await getTestimonials()
@@ -18,7 +17,7 @@ export default async function Home() {
                 <div className="BackgrounImageHeaderHome">
                     <div className="PageHeaderMenu">
 
-                        <HomeHeader />
+                        <HomeHeaderServer />
                         <NavigationServer />
                     </div>
                 </div>

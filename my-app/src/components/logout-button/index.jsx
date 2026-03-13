@@ -6,7 +6,7 @@ import Link from "next/link";
 export default function LogoutButton({ loggedIn }) {
 
     if (!loggedIn) {
-        return <Link href="/login">Log ind</Link>;
+        return <button><Link href="/login">Log ind</Link></button>;
     }
 
     return (

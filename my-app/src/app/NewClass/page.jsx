@@ -4,14 +4,15 @@ import { cookies } from "next/headers";
 import { FaArrowLeft } from "react-icons/fa";
 import CreateClassForm from "@/components/NewClassForm";
 import NavigationServer from "@/components/Navigation/NavigatonServer";
-import { getUsersById } from "@/lib/user";
+
+import { getAllTrainers } from "@/lib/trainers";
 
 export default async function MakeNewClassPage() {
     const cookieStore = await cookies()
     const role = cookieStore.get("role")?.value
-    const userId = cookieStore.get("userId")?.value
-    const user = getUsersById()
+    const trainers = await getAllTrainers()
 
+    
     return role !== "admin" ? (
         <>
             <p>you can't make a new class unless admin</p>
@@ -19,16 +20,18 @@ export default async function MakeNewClassPage() {
         </>
     ) : (
         <>
+        <main className="MakeNewClassContainer">
             <span id="Search" className="PageHeaderMenu">
 
-                <Link href="/classes" className="back-link">
+                <Link href="/profile" className="back-link">
                     <FaArrowLeft size={30} color="#999" />
                 </Link>
 
                 <NavigationServer />
             </span>
 
-            <CreateClassForm userId={userId} user={user} />
+            <CreateClassForm trainers={trainers} />
+            </main>
         </>
     )
 

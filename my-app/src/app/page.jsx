@@ -34,13 +34,15 @@ export default function Loader() {
 
         <section className={`background-image-container ${randomImage}`}>
           <div className="loader-content-container">
-            <h1>Believe <span className="titleSecondLine"> Fitness</span></h1>
-            <div>
-              <span></span>
-              <h2>Train like a pro</h2>
-            </div>
+        <h1>Believe <span className="titleSecondLine"> Fitness</span></h1>
+                    <div>
+                        
+                        <div className="secondLogoTitle">
+                      <div className="Line"></div>  <h2>Train like a pro</h2>
+                      </div>
+                    </div>
 
-          </div>
+                </div>
 
           <button className="BtnToHomeFromLoader">
             <Link
